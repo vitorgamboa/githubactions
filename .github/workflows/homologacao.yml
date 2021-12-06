@@ -37,7 +37,7 @@ jobs:
           
       - name: Hello world action step
         id: hello
-        uses: vitorgamboa/hello-world-docker-action@v4
+        uses: vitorgamboa/hello-world-docker-action@v5
         with:
           who-to-greet: 'Testee'
           pass-action-deploy: ${{ secrets.SENHA_ACTION_DEPLOY }}
