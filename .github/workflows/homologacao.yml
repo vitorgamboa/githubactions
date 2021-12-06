@@ -40,7 +40,7 @@ jobs:
         uses: vitorgamboa/hello-world-docker-action@v3
         with:
           who-to-greet: 'Testee'
-          pass-action-deploy: ${{ SENHA_ACTION_DEPLOY }}
+          pass-action-deploy: ${{ secrets.SENHA_ACTION_DEPLOY }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
